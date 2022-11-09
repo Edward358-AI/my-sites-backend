@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Welcome to the Home of MyohTheGod. This is a place where you can feel free and limitless in the world wide web. We have web proxies, bypasses, bookmarklets, games, and more." >
+  
+  <style>
+    html {
+      visibility: hidden;
+      opacity: 0;
+    }
+  </style>
+  <script src="/js/header.js"></script>
+  <title>Home of MyohTheGod</title>
+  <link rel="icon" type="image/x-icon" href="/supercorn.gif" defer>
+  </link>
+  <link id="css" href="/css/index.css" rel="stylesheet" type="text/css">
+  </link>
+</head>
+
+<body>
+  <p style="margin:10px;text-align:center;">Load times may be slow - really slow<br>Also, I'm building a sister website with a different focus in mind! Visit it <a href="https://r3alitycubed.edjiang1234.repl.co">here</a>!</p>
+  <div class="mainstuff">
+    <p style="font-family: Cedarville Cursive, cursive"><i>Welcome to the Home of MyohTheGod.</i></p>
+    <i>
+      <p id="goodmorning"></p>
+    </i>
+    <p><i>Welcome to a place where you will feel free and limitless.</i></p>
+    <a href="/ac"><button id="aboutbutton"><i>About...</i></button></a>
+  </div>
+</body>
+<script>
+  function goodmonring() {
+    var dez = new Date();
+    var hrs = dez.getHours();
+    var goodmorning = document.getElementById("goodmorning");
+    if (hrs < 12 || hrs == 0) {
+      goodmorning.innerHTML = "Good Morning.";
+    }
+    else if (hrs >= 12 && hrs < 18) {
+      goodmorning.innerHTML = "Good Afternoon.";
+    }
+    else if (hrs >= 18) {
+      goodmorning.innerHTML = "Good Night.";
+    }
+    setTimeout(goodmonring, 3600)
+  }
+  goodmonring();
+</script>
+
+</html>
