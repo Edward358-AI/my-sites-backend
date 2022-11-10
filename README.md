@@ -10,5 +10,5 @@ node index.js
 ```
 Here are the respective ports (editable in the index.js files of each folder):
 r3alitycubed-backend: 3000
-myohthegod-backend: 3100
-myohthegod-withauth: 3030
+myohthegod-backend: 3030
+myohthegod-withauth: 3100
